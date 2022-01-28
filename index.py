@@ -66,3 +66,18 @@ print("data type : ", type(castToBool))
 castToBool2 = bool(thisIsString)  # return false if the value is 0 or empty string, except it will be true
 print("casting str to bool example : ", castToBool2)
 print("data type : ", type(castToBool2))
+
+# Input
+inputUser = input("enter data : ") # anything that inputed data will be string
+print("the input is ", inputUser)
+print("data type : ", type(inputUser))
+
+## if we want to change inputed data become integer, then :
+inputUserInt = int(input("enter a number : "))
+print("the input is ", inputUserInt)
+print("data type : ", type(inputUserInt))
+
+## when we want inputed data boolean typed
+inputBool = bool(int(input("enter a boolean : "))) # cast to int first, if we not cast it first all inputed console will be string
+print("the input is ", inputBool)
+print("data type : ", type(inputBool))
