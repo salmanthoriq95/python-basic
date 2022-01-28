@@ -1,2 +1,45 @@
-print("hello world")
-a = 10
+# This is introduce of variable and data types
+# example :
+# a = 10
+# that mean "a" is the variable and "10" is the value  
+# Remember! python have dynamics data types!
+# variable must be direct assign
+# 
+# to know the data type of variable you can call type(var_name)
+
+# Integer
+thisIsInt = 1234
+print("integer example : ", thisIsInt)
+print("data type : ", type(thisIsInt))
+
+# Float
+thisIsFloat = 3.14
+print("float example : ", thisIsFloat)
+print("data type : ", type(thisIsFloat))
+
+# String
+thisIsString = "Hello World !"
+print("string example : ", thisIsString)
+print("data type : ", type(thisIsString))
+
+# Boolean
+thisIsBoolTrue = True
+thisIsBoolFalse = False
+print("bool true example : ", thisIsBoolTrue)
+print("data type : ", type(thisIsBoolTrue))
+print("bool false example : ", thisIsBoolFalse)
+print("data type : ", type(thisIsBoolFalse))
+
+# Complex (for imaginary number)
+thisIsComplex = complex(5,6)
+print("complex example : ", thisIsComplex)
+print("data type : ", type(thisIsComplex))
+
+# Import from C data types
+from ctypes import c_double # Importing C data types
+thisIsCType = c_double(1.9827364598273645928)
+print("import C data types example : ", thisIsCType)
+print("data type : ", type(thisIsCType))
+
+# Constant
+
