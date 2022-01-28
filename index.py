@@ -41,5 +41,28 @@ thisIsCType = c_double(1.9827364598273645928)
 print("import C data types example : ", thisIsCType)
 print("data type : ", type(thisIsCType))
 
-# Constant
+# Casting or changing data type of the variable
+## int to str
+castToString = str(thisIsInt)
+print("casting int to str example : ", castToString)
+print("data type : ", type(castToString))
 
+## int to float
+castToFloat = float(thisIsInt) # rounding down
+print("casting int to float example : ", castToFloat)
+print("data type : ", type(castToFloat))
+
+## float to int
+castToInt = int(thisIsFloat)
+print("casting float to int example : ", castToInt)
+print("data type : ", type(castToInt))
+
+## int to bool
+castToBool = bool(thisIsFloat) # return false if the value is 0 or empty string, except it will be true
+print("casting int to bool example : ", castToBool)
+print("data type : ", type(castToBool)) 
+
+## str to bool
+castToBool2 = bool(thisIsString)  # return false if the value is 0 or empty string, except it will be true
+print("casting str to bool example : ", castToBool2)
+print("data type : ", type(castToBool2))
